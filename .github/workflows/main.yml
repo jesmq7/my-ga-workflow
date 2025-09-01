@@ -1,0 +1,16 @@
+name: My First Worflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  myFirstJob:
+    runs-on: windows-latest
+    steps:
+      - name: My First Step
+        run: printenv
+      - name: My Second Comand
+        run: |
+          echo "Amigoscode"
+          echo "Hello" > file.txt
+          ls
