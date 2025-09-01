@@ -5,12 +5,15 @@ on:
       - main
 jobs:
   myFirstJob:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: My First Step
         run: printenv
-      - name: My Second Comand
+      - name: My Second Step
         run: |
           echo "Amigoscode"
           echo "Hello" > file.txt
           ls
+          echo file.text
+      - name: Sleep Step
+        run: sleep 20
